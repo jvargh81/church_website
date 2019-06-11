@@ -38,22 +38,21 @@
 					{{form.remember(class="form-check-input")}}
 					{{form.remember.label(class="form-check-label")}}
 				</div>
-			</fieldset>
+			</fieldset> </br>
 			<div class="form-group">
-				{{form.submit(class="btn btn-outline-info")}}
+				{{form.submit(class="btn btn-outline-info",value="Login")}}
+			
+				<small class="text-muted ml-2">
+					<a href="#">Forgot Password?</a>
+				</small>
 			</div>
-			<small class="text-muted ml-2">
-				<a href="#">Forgot Password?</a>
-			</small>
 		</form>
 	</div>
 	<div class="border-top pt-3">
-		Need an Account <a class="ml-2" href="{{url_for('register')}}">Sign In </a>
+		Need an Account <a class="ml-2" href="{{url_for('register')}}">Sign UP </a>
 	</div>
 
 {% endblock content %}
-
-
 
 
 
